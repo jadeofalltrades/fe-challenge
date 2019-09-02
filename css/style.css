@@ -1,0 +1,269 @@
+*, *before, *after {
+  box-sizing: border-box;}
+
+html{
+  align: center;
+}
+
+/*UI Bars*/
+.status-bar {
+  float:left;
+  width:375px;
+  height:20px;
+  position:absolute;
+  left: 0px;
+  top: 0px;
+  background-color:#1C435A;
+}
+.sig{
+  position: absolute;
+  left: 1.87%;
+  bottom: 2.5px;
+}
+.gs {
+  position: absolute;
+  left: 26px;
+  bottom: 2.5px;
+}
+.wifi {
+  position: absolute;
+  left: 45.5px;
+  bottom: 2.5px;
+}
+.clock{
+  position: absolute;
+  left: 40.27%;
+  bottom:2.5px;
+}
+.battery{
+  position: absolute;
+  right:4.5px;
+  bottom: 2.5px;
+}
+
+/* App Navigation */
+
+.top-nav{
+  background-color:#1C435A;
+  height:87px;
+}
+
+.hamburger-menu{
+  position: absolute;
+  left:328px;
+  top:50px;
+}
+
+.back-arrow{
+  position: absolute;
+  left: 24px;
+  top: 48px;
+}
+
+/*Route Info*/
+
+body{
+  box-sizing: border-box;
+  font-size: 16px;
+  font-family: 'Nunito', Helvetica, sans-serif;
+  float:left;
+  width:375px;
+}
+
+section{
+    width: 375px;
+    background: #33566B;
+    height: 750px;
+  }
+
+h1 {
+    position: absolute;
+    text-align: center;
+    font-size: 1.125em;
+    color:#ffffff;
+    left:106px;
+    top:54px;
+  }
+
+h2 {
+    position:absolute;
+    padding-bottom: 6px;
+    text-align: left;
+    font-weight: 800;
+    font-size: 1.125em;
+    line-height: 25px;
+    left:8px;
+    color: #0D202C;
+  }
+
+h3 {
+    position: relative;
+    font-size: 1em;
+    line-height: 25px;
+    left:0;
+    top: 10px;
+    color: #0D202C;}
+  }
+h4{
+    font-size:87.5%;
+  }
+
+h5{
+    align: right;
+    font-size:81.25%;
+  }
+
+nav{
+    background-color: #1C435A;
+  }
+
+/* Your Route Styling */
+
+  .your-route{
+    position:absolute;
+    margin: 0 0 8px 0;
+    top:103px;
+    width: 343px;
+    left:16px;
+    height: 75px;
+    border-radius: 5px;
+    background-color:#FFFFFF;
+  }
+
+  .content, .time{
+    float: left;
+    display:inline-block;
+    box-sizing: border-box;
+}
+
+  .content{
+    box-sizing: border-box;
+    position: relative;
+    padding-top: 7%;
+    padding-bottom:21px;
+    height: 56px;
+    width:75%;
+    left:32px;
+    top:5px;
+}
+
+  .time{
+    position: relative;
+    text-align: right;
+    padding-left:5%;
+    padding-top:2.5%;
+    margin:0%;
+    right:32px;
+    top:33px;
+    width:25%;
+}
+
+/* Other Routes Styling */
+
+  .other-routes {
+    position:absolute;
+    margin: 0 0 8px 0;
+    height:310px;
+    width:343px;
+    left: 16px;
+    top:186px;
+    border-radius: 5px;
+    background-color:#FFFFFF;
+}
+
+  .other-content, .other-time{
+    float: left;
+    display: block;
+    box-sizing: border-box;
+  }
+
+  .other-time {
+    position: relative;
+    text-align: right;
+    padding-left:5%;
+    padding-top:2.5%;
+    top:67px;
+    right:32px;
+    width:25%;
+  }
+
+  .other-content{
+    box-sizing: border-box;
+    position: relative;
+    padding-top: 3%;
+    height: 56px;
+    left: 32px;
+    top:51px;
+    width: 75%;
+  }
+
+/* Reroutes Styling */
+
+ .reroutes {
+    position: absolute;
+    margin: 0 0 8px 0;
+    background-color:#FFFFFF;
+    width:343px;
+    height:75px;
+    left:16px;
+    top:504px;
+    border-radius: 5px;
+  }
+.re-time{
+    position: relative;
+    padding-left:5%;
+    padding-top:2.5%;
+    margin:0%;
+    top:110px;
+    left:275px;
+    width:25%;
+  }
+.re-content{
+    box-sizing: border-box;
+    position: relative;
+    padding-top: 3%;
+    height: 56px;
+    left: 32px;
+    top:100px;
+    width: 75%;
+  }
+
+/*Out of Service Styling */
+
+  .out-of-service{
+    position: absolute;
+    margin: 0 0 8px 0;
+    background-color:#FFFFFF;
+    width:343px;
+    height:198px;
+    left:16px;
+    top:587px;
+    border-radius: 5px;
+  }
+
+  .out-of-content, .out-of-time{
+    float: left;
+}
+  .out-of-content{
+    box-sizing: border-box;
+    position: relative;
+    height: 56px;
+    left: 32px;
+    top:170px;
+    width: 62%;
+  }
+
+  .out-of-time{
+    position: relative;
+    text-align:right;
+    margin:0%;
+    top:184px;
+    right:28px;
+    width:38%;
+  }
+
+  .subtract{
+    position: absolute;
+    top:5px;
+    left:10px;
+  }
