@@ -1,9 +1,6 @@
 *, *before, *after {
   box-sizing: border-box;}
 
-html{
-  align: center;
-}
 
 /*UI Bars*/
 .status-bar {
@@ -15,30 +12,26 @@ html{
   top: 0px;
   background-color:#1C435A;
 }
-.sig{
+
+.sig, .gs, .wifi, .clock, .battery {
   position: absolute;
+  bottom: 2.5px
+}
+
+.sig{
   left: 1.87%;
-  bottom: 2.5px;
 }
 .gs {
-  position: absolute;
   left: 26px;
-  bottom: 2.5px;
 }
 .wifi {
-  position: absolute;
   left: 45.5px;
-  bottom: 2.5px;
 }
 .clock{
-  position: absolute;
   left: 40.27%;
-  bottom:2.5px;
 }
 .battery{
-  position: absolute;
   right:4.5px;
-  bottom: 2.5px;
 }
 
 /* App Navigation */
@@ -46,6 +39,7 @@ html{
 .top-nav{
   background-color:#1C435A;
   height:87px;
+  width: 100%;
 }
 
 .hamburger-menu{
@@ -73,7 +67,7 @@ body{
 section{
     width: 375px;
     background: #33566B;
-    height: 750px;
+    height: 678px;
   }
 
 h1 {
@@ -87,7 +81,6 @@ h1 {
 
 h2 {
     position:absolute;
-    padding-bottom: 6px;
     text-align: left;
     font-weight: 800;
     font-size: 1.125em;
@@ -219,7 +212,6 @@ nav{
     width:25%;
   }
 .re-content{
-    box-sizing: border-box;
     position: relative;
     padding-top: 3%;
     height: 56px;
@@ -228,6 +220,8 @@ nav{
     width: 75%;
   }
 
+
+
 /*Out of Service Styling */
 
   .out-of-service{
@@ -235,7 +229,7 @@ nav{
     margin: 0 0 8px 0;
     background-color:#FFFFFF;
     width:343px;
-    height:198px;
+    height:169px;
     left:16px;
     top:587px;
     border-radius: 5px;
@@ -247,19 +241,23 @@ nav{
   .out-of-content{
     box-sizing: border-box;
     position: relative;
-    height: 56px;
-    left: 32px;
+    text-indent: 16px;
+    height:49px;
+    left: 16px;
     top:170px;
-    width: 62%;
+    width:52%;
   }
 
   .out-of-time{
+    box-sizing: border-box;
     position: relative;
     text-align:right;
+    padding-bottom:18px;
+    padding-right:18px;
     margin:0%;
+    right:16.5px;
     top:184px;
-    right:28px;
-    width:38%;
+    width:48%;
   }
 
   .subtract{
