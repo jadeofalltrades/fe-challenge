@@ -5,33 +5,27 @@
 /*UI Bars*/
 .status-bar {
   float:left;
+  display:inline-block;
   width:375px;
   height:20px;
-  position:absolute;
   left: 0px;
   top: 0px;
   background-color:#1C435A;
 }
-
-.sig, .gs, .wifi, .clock, .battery {
-  position: absolute;
-  bottom: 2.5px
-}
-
 .sig{
-  left: 1.87%;
+  padding:3.5px 0px 2.5px 5px;
 }
 .gs {
-  left: 26px;
+  padding:3.5px 0px 2.5px 0px;
 }
 .wifi {
-  left: 45.5px;
+  padding:3.5px 0px 2.5px 0px;
 }
 .clock{
-  left: 40.27%;
+  padding:3.5px 40px 2.5px 90px;
 }
 .battery{
-  right:4.5px;
+  padding: 3.5px 5px 2.5px 50px;
 }
 
 /* App Navigation */
@@ -39,29 +33,34 @@
 .top-nav{
   background-color:#1C435A;
   height:87px;
-  width: 100%;
 }
-
+.screen, .hamburger-menu, .back-arrow{
+  box-sizing: border-box;
+  float: left;
+}
 .hamburger-menu{
-  position: absolute;
-  left:328px;
   top:50px;
-}
+  padding:20px 16px 0 35px;
+  width: 20%;
 
+}
 .back-arrow{
-  position: absolute;
-  left: 24px;
-  top: 48px;
-}
+  padding: 19px 0px 0 16px;
+  top:21px;
+  width: 20%;
 
+}
+.screen{
+  padding: 20px 0 0 10px;
+  width: 60%;
+  top:25px;
+}
 /*Route Info*/
 
 body{
-  box-sizing: border-box;
   font-size: 16px;
-  font-family: 'Nunito', Helvetica, sans-serif;
-  float:left;
-  width:375px;
+  font-family: "Nunito", Helvetica, sans-serif;
+  margin: auto;
 }
 
 section{
@@ -71,31 +70,29 @@ section{
   }
 
 h1 {
-    position: absolute;
+    float: left;
     text-align: center;
     font-size: 1.125em;
     color:#ffffff;
-    left:106px;
-    top:54px;
   }
 
+h2, h3, h4, h5{
+  color: #0D202C;
+}
+
 h2 {
-    position:absolute;
+    padding: 6px 0 0 8px;
     text-align: left;
     font-weight: 800;
     font-size: 1.125em;
     line-height: 25px;
     left:8px;
-    color: #0D202C;
+
   }
 
 h3 {
-    position: relative;
     font-size: 1em;
     line-height: 25px;
-    left:0;
-    top: 10px;
-    color: #0D202C;}
   }
 h4{
     font-size:87.5%;
@@ -106,162 +103,87 @@ h5{
     font-size:81.25%;
   }
 
-nav{
-    background-color: #1C435A;
-  }
-
+/* Nested styles */
+.content, .time, .out-of-content, .out-of-time, .other-content, .other-time, .re-content,.re-time{
+  float: left;
+  display:inline-block;
+  box-sizing: border-box;
+}
+.time, .other-time{
+  width: 27%;
+}
+.content, .other-content{
+  width: 73%;
+}
+.time, .other-time, .re-time, .out-of-time{
+  padding: 8px 8px 0 0;
+  text-align: right;
+}
+.content, .other-content, .re-content, .out-of-content {
+  padding: 8px 0 0 8px;
+}
+.other-routes, .reroutes, .out-of-service{
+  display: inline-block;
+  margin: 4px 16px 4px 16px;
+  width:343px;
+  float: left;
+  border-radius: 5px;
+}
 /* Your Route Styling */
 
   .your-route{
-    position:absolute;
-    margin: 0 0 8px 0;
-    top:103px;
+    display:inline-block;
+    margin: 16px 16px 4px 16px;
     width: 343px;
-    left:16px;
     height: 75px;
     border-radius: 5px;
     background-color:#FFFFFF;
   }
-
-  .content, .time{
-    float: left;
-    display:inline-block;
-    box-sizing: border-box;
-}
-
   .content{
-    box-sizing: border-box;
-    position: relative;
-    padding-top: 7%;
-    padding-bottom:21px;
-    height: 56px;
-    width:75%;
-    left:32px;
-    top:5px;
-}
-
-  .time{
-    position: relative;
-    text-align: right;
-    padding-left:5%;
-    padding-top:2.5%;
-    margin:0%;
-    right:32px;
-    top:33px;
-    width:25%;
+    height: 25px;
 }
 
 /* Other Routes Styling */
 
   .other-routes {
-    position:absolute;
-    margin: 0 0 8px 0;
     height:310px;
-    width:343px;
-    left: 16px;
-    top:186px;
-    border-radius: 5px;
     background-color:#FFFFFF;
 }
-
-  .other-content, .other-time{
-    float: left;
-    display: block;
-    box-sizing: border-box;
-  }
-
-  .other-time {
-    position: relative;
-    text-align: right;
-    padding-left:5%;
-    padding-top:2.5%;
-    top:67px;
-    right:32px;
-    width:25%;
-  }
-
   .other-content{
-    box-sizing: border-box;
-    position: relative;
-    padding-top: 3%;
     height: 56px;
-    left: 32px;
-    top:51px;
-    width: 75%;
   }
 
 /* Reroutes Styling */
 
  .reroutes {
-    position: absolute;
-    margin: 0 0 8px 0;
     background-color:#FFFFFF;
-    width:343px;
     height:75px;
-    left:16px;
-    top:504px;
-    border-radius: 5px;
   }
-.re-time{
-    position: relative;
-    padding-left:5%;
-    padding-top:2.5%;
-    margin:0%;
+  .re-content{
+    height: 25px;
+    width: 92%;
+    }
+  .re-time{
     top:110px;
-    left:275px;
-    width:25%;
+    width:8%;
   }
-.re-content{
-    position: relative;
-    padding-top: 3%;
-    height: 56px;
-    left: 32px;
-    top:100px;
-    width: 75%;
-  }
-
-
 
 /*Out of Service Styling */
 
   .out-of-service{
-    position: absolute;
-    margin: 0 0 8px 0;
     background-color:#FFFFFF;
-    width:343px;
     height:169px;
-    left:16px;
-    top:587px;
-    border-radius: 5px;
   }
-
-  .out-of-content, .out-of-time{
-    float: left;
-}
   .out-of-content{
-    box-sizing: border-box;
-    position: relative;
-    text-indent: 16px;
     height:49px;
-    left: 16px;
-    top:170px;
     width:52%;
   }
-
   .out-of-time{
-    box-sizing: border-box;
-    position: relative;
-    text-align:right;
-    padding-bottom:18px;
-    padding-right:18px;
-    margin:0%;
-    right:16.5px;
-    top:184px;
     width:48%;
   }
-
   .subtract{
-    position: absolute;
+    display: inline-block;
+    float:left;
     top:5px;
     left:10px;
   }
